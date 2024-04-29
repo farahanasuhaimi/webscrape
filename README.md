@@ -24,8 +24,30 @@ My approach to learning web scraping involves the following steps:
 1. **Understand the Fundamentals**: Start by grasping the basics of web scraping, including HTTP requests, HTML parsing, and handling dynamic content.
     - HTTP (Hypertext Transfer Protocol) is the primary protocol used for communication over the World Wide Web. It defines how web browsers and servers should interact and transfer data. When you enter a URL (Uniform Resource Locator) in your web browser, your browser sends an HTTP request to the server hosting the website, and the server responds with the requested data, such as an HTML page, image, or other resources.
     ![HTTP GET request](getRequest.png)
-2. **Explore Tools and Libraries**: Familiarize yourself with popular web scraping tools and libraries like Selenium, Puppeteer, Scrapy, Beautiful Soup, and others.
+    - HTTP requests components:
+      - **Request Method**: The HTTP method used for the request, such as GET, POST, PUT, DELETE, etc.
 
+        | Method     | Description                                                                                                             | Idempotent |
+        |------------|-------------------------------------------------------------------------------------------------------------------------|------------|
+        | GET   | Retrieves a resource from the server. Multiple identical requests return the same result.                               | Yes        |
+        | PUT   | Updates or creates a resource. Multiple identical requests will update the same resource.                              | Yes        |
+        | POST  | Creates new resources. Two identical POST requests will duplicate resource creation.                                    | No         |
+        | DELETE| Deletes a resource. Multiple identical requests will delete the same resource.                                           | Yes        |
+        | PATCH | Applies partial modifications to a resource.                                                                             | No         |
+        | HEAD  | Asks for a response identical to a GET request but without the response body.                                             | Yes        |
+        | CONNECT| Establishes a tunnel to the server identified by the target resource.                                                     | No         |
+        | OPTIONS| Describes the communication options for the target resource.                                                              | Yes        |
+        | TRACE | Performs a message loop-back test along the path to the target resource.                                                  | Yes        |
+      - **Request URL**: The URL of the resource being requested.
+      - **Request Headers**: Additional information sent with the request, such as user-agent, cookies, and content type.
+      - **Request Body**: Data sent with the request, typically used with POST requests.
+      - **Response Status Code**: A three-digit code indicating the status of the request, such as 200 (OK), 404 (Not Found), 500 (Internal Server Error), etc.
+    - The Requests library in Python simplifies the process of sending HTTP requests and handling responses. It provides a user-friendly interface for creating requests, setting headers, handling cookies, and managing sessions.
+2. **Explore Tools and Libraries**: Familiarize yourself with popular web scraping tools and libraries.
+   - **Requests**: A Python library for making HTTP requests and handling responses. It is widely used for web scraping due to its simplicity and ease of use.
+   - **Beautiful Soup**: A Python library for parsing HTML and XML documents. It provides tools for navigating the parse tree, searching for elements, and extracting data from web pages.
+   - **Selenium**: A web automation tool that allows you to control a web browser programmatically. It is useful for scraping websites with JavaScript-rendered content or handling complex interactions.
+   - 
 3. **Practice on Static Websites**: Begin with scraping static websites to understand the core concepts and techniques.
 
 4. **Tackle Dynamic Websites**: Move on to more challenging tasks, such as scraping websites with JavaScript-rendered content and handling AJAX requests.
