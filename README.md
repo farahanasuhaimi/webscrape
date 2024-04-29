@@ -27,17 +27,17 @@ My approach to learning web scraping involves the following steps:
     - HTTP requests components:
       - **Request Method**: The HTTP method used for the request, such as GET, POST, PUT, DELETE, etc.
 
-        | Method     | Description                                                                                                             | Idempotent |
-        |------------|-------------------------------------------------------------------------------------------------------------------------|------------|
-        | GET   | Retrieves a resource from the server. Multiple identical requests return the same result.                               | Yes        |
-        | PUT   | Updates or creates a resource. Multiple identical requests will update the same resource.                              | Yes        |
-        | POST  | Creates new resources. Two identical POST requests will duplicate resource creation.                                    | No         |
-        | DELETE| Deletes a resource. Multiple identical requests will delete the same resource.                                           | Yes        |
-        | PATCH | Applies partial modifications to a resource.                                                                             | No         |
-        | HEAD  | Asks for a response identical to a GET request but without the response body.                                             | Yes        |
-        | CONNECT| Establishes a tunnel to the server identified by the target resource.                                                     | No         |
-        | OPTIONS| Describes the communication options for the target resource.                                                              | Yes        |
-        | TRACE | Performs a message loop-back test along the path to the target resource.                                                  | Yes        |
+        | Method     | Description | Idempotent |
+        |------------|-------------------------------------|------------|
+        | GET   | Retrieves a resource from the server. | Yes        |
+        | PUT   | Updates or creates a resource.| Yes        |
+        | POST  | Creates new resources.| No         |
+        | DELETE| Deletes a resource. | Yes        |
+        | PATCH | Applies partial modifications to a resource.| No         |
+        | HEAD  | Asks for a response identical to a GET request but without the response body.| Yes        |
+        | CONNECT| Establishes a tunnel to the server identified by the target resource.| No         |
+        | OPTIONS| Describes the communication options for the target resource.| Yes        |
+        | TRACE | Performs a message loop-back test along the path to the target resource. | Yes        |
       - **Request URL**: The URL of the resource being requested.
       - **Request Headers**: Additional information sent with the request, such as user-agent, cookies, and content type.
       - **Request Body**: Data sent with the request, typically used with POST requests.
