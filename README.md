@@ -4,12 +4,14 @@ This repository serves as a companion for my journey in learning web scraping te
 
 ## Table of Contents
 
-- [Introduction](#introduction)
-- [Learning Strategy](#learning-strategy)
-- [Tools and Libraries](#tools-and-libraries)
-- [Resources](#resources)
-- [Getting Started](#getting-started)
-- [Contributing](#contributing)
+- [Web Scraping Learning Journey](#web-scraping-learning-journey)
+  - [Table of Contents](#table-of-contents)
+  - [Introduction](#introduction)
+  - [Learning Strategy](#learning-strategy)
+  - [Tools and Libraries](#tools-and-libraries)
+  - [Resources](#resources)
+  - [Getting Started](#getting-started)
+  - [Contributing](#contributing)
 
 ## Introduction
 
@@ -20,7 +22,8 @@ Web scraping involves extracting data from websites by automating the process of
 My approach to learning web scraping involves the following steps:
 
 1. **Understand the Fundamentals**: Start by grasping the basics of web scraping, including HTTP requests, HTML parsing, and handling dynamic content.
-
+    - HTTP (Hypertext Transfer Protocol) is the primary protocol used for communication over the World Wide Web. It defines how web browsers and servers should interact and transfer data. When you enter a URL (Uniform Resource Locator) in your web browser, your browser sends an HTTP request to the server hosting the website, and the server responds with the requested data, such as an HTML page, image, or other resources.
+    ![HTTP GET request](getRequest.png)
 2. **Explore Tools and Libraries**: Familiarize yourself with popular web scraping tools and libraries like Selenium, Puppeteer, Scrapy, Beautiful Soup, and others.
 
 3. **Practice on Static Websites**: Begin with scraping static websites to understand the core concepts and techniques.
