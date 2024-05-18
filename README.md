@@ -23,7 +23,7 @@ My approach to learning web scraping involves the following steps:
 
 1. **Understand the Fundamentals**: Start by grasping the basics of web scraping, including HTTP requests, HTML parsing, and handling dynamic content.
     - HTTP (Hypertext Transfer Protocol) is the primary protocol used for communication over the World Wide Web. It defines how web browsers and servers should interact and transfer data. When you enter a URL (Uniform Resource Locator) in your web browser, your browser sends an HTTP request to the server hosting the website, and the server responds with the requested data, such as an HTML page, image, or other resources.
-    ![HTTP GET request](getRequest.png)
+    ![HTTP GET request](images/getRequest.png)
     - HTTP requests components:
       - **Request Method**: The HTTP method used for the request, such as GET, POST, PUT, DELETE, etc.
 
